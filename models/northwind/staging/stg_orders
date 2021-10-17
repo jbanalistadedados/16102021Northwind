@@ -1,0 +1,18 @@
+with pedidos as (
+    select
+        order_id as id_pedido
+        , employee_id as id_funcionario
+        , order_date as data_pedido
+        , customer_id as id_cliente
+        , ship_region as regiao_entrega
+        , shipped_date as data_expedicao
+        , ship_country as pais_entrega
+        , ship_name as nome_entrega
+        , ship_postal_code as cep_entrega
+        , ship_city as cidade_entrega
+        , freight as frete
+        , ship_via as id_transportador
+        , ship_address as endereco_entrega
+        , required_date as data_prevista
+    from {{ source('erpNorthwind16102021', 'orders' )}}
+),
