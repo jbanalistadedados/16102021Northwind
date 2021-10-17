@@ -1,7 +1,8 @@
 version: 2
+
 sources:
-    name:  erpNorthwind16102021
-    schema:  erpNorthwind16102021
-    description: Fonte de dados
+  - name: erpNorthwind16102021
+  - schema:  erpNorthwind16102021
+    description: fonte de dados
     tables:
       - name: orders
