@@ -1,5 +1,5 @@
 with pedidos as 
-    select_data as (
+    select_data as(
         order_id 
         , employee_id 
         , order_date 
