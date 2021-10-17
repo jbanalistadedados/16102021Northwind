@@ -14,5 +14,5 @@ with pedidos as (
         , ship_via as id_transportador
         , ship_address as endereco_entrega
         , required_date as data_prevista
-    from {{ source('erpNorthwind16102021', 'orders' )}}
+    from {{ source('erpNorthwind16102021', 'orders')}}
 ),
