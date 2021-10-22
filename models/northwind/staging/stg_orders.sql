@@ -1,6 +1,6 @@
 with pedidos as 
-    select_data as(
-        order_id 
+    source as (
+      order_id 
         , employee_id 
         , order_date 
         , customer_id 
@@ -15,5 +15,5 @@ with pedidos as
         , ship_address 
         , required_date 
     from {{ source('erpNorthwind16102021', 'orders')}}
-),
-select * select_data
+    )
+select * from source
