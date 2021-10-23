@@ -4,9 +4,8 @@ sources:
   - name: erpNorthwind16102021
     description: This is a replica of the Postgres database used by our client
     tables:
-      - name: orders
-        description: >
-          One record per order. Includes cancelled and deleted orders.
+      - name: public_orders
+        description: One record per order. Includes cancelled and deleted orders.
         columns:
           - name: orders_id
             description: Primary key of the orders table
