@@ -1,0 +1,1 @@
+SELECT * FROM `projetonorthwind.erpNorthwind16102021.public_orders`
