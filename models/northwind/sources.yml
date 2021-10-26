@@ -15,7 +15,7 @@ sources:
             description: Esta tabela contem informação sobre os entregadores da Northwind.
           - name: employees
             description: Esta tabela contem informação sobre os colaboradores da Northwind.
-          - name: customers
+          - name: customers_id
             description: Esta tabela contem informação sobre os clientes da Northwind.
           - name: suppliers
             description: Esta tabela contem informação sobre os fornecedores da Northwind.
