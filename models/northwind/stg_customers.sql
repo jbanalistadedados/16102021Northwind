@@ -13,4 +13,4 @@ with
             , fax
             company_name
         from {{ source ('erpNorthwind16102021','customers')}}
-    )
+        )

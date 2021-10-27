@@ -6,6 +6,8 @@ sources:
     tables:
       - name: public_orders
         description: chaveid
+      - name: public_customers
+        description: Clientes key
         columns:
           - name: order_id
             description: Primary key of the orders table
