@@ -8,10 +8,12 @@ sources:
         description: chaveid
       - name: public_customers
         description: Clientes key
+      - name: public_products
+        description: Clientes key
         columns:
           - name: order_id
             description: Primary key of the orders table
-          - name: products
+          - name: product_id
             description: Esta tabela contem informação sobre os produtos da Northwind.
           - name: shippers
             description: Esta tabela contem informação sobre os entregadores da Northwind.
