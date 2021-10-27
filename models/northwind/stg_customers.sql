@@ -12,5 +12,5 @@ with
             , phone	
             , fax
             company_name
-        from {{ source ('erpNorthwind16102021','customers')}}
+        from {{ source ('erpNorthwind16102021','public_customers')}}
         )
