@@ -1,16 +1,25 @@
-with
+    {{ config(materialized='table') }}
+    with
     source_data as (
         select
-            customer_id		
-            , contact_name	
-            , contact_title	
-            , address	
-            , city	
-            , region	
-            , postal_code	
-            , country	
-            , phone	
+            country
+            , city
             , fax
-            company_name
-        from {{ source ('erpNorthwind16102021','public_customers')}}
-        )
+            , postal_code
+            -- , _sdc_table_version
+            , address
+            , region
+            -- , _sdc_received_at
+            , customer_id
+            -- , _sdc_sequence
+            , contact_name
+            , phone
+            , company_name
+            , contact_title
+            -- , _sdc_batched_at
+            -- , _sdc_extracted_at
+        from {{source('erpNorthwind16102021','public_customers')}}
+)
+
+select *
+from source_data
