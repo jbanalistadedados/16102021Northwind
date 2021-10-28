@@ -1,9 +1,9 @@
 {{ config(materialized='table') }}
 with
-    customer as (
+    customers as (
         select
             customer_sk
-            customers_id
+            customer_id
         from {{ref('dim_customers')}}
     )
 
@@ -25,6 +25,6 @@ with
           , orders.required_date
 
         from {{ ref('stg_orders') }} orders
-        left join customers on orders.customer_id = custumers.customer_id
+       left join customers customers on orders.customer_id = customers.customer_id
 )        
 select * from orders_with_sk
