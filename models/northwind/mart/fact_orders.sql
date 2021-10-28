@@ -25,6 +25,6 @@ with
           , orders.required_date
 
         from {{ ref('stg_orders') }} orders
-        left join customers on orders.customer_id = custumers.customers_id
-        
+        left join customers on orders.customer_id = custumers.customer_id
+)        
 select * from orders_with_sk
